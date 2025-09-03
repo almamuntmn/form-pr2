@@ -2,7 +2,6 @@ const SimpleForm = () => {
 
 const handleSubmit = e => {
     e.preventDefault();
-    console.log('Submitted')
     console.log(e.target.Name.value);
     console.log(e.target.email.value);
     console.log(e.target.password.value);
@@ -18,7 +17,8 @@ const handleSubmit = e => {
                 <br />
                 <input type="password" name="password" />
                 <br />
-                <input type="submit" name="Submit" />
+                <hr />
+                <input type="submit" value="Submit" />
             </form>
         </div>
     );
